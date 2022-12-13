@@ -189,7 +189,8 @@ def train(list_train_mat,list_val_mat,list_test_mat,list_label,num_nodes,num_fea
 
     #Can comment following two lines to save memory on GPU
     #though the training will be slower 
-
+    # Commented for arxiv-year in our case to avoid GPU OOM error in our case
+    
     list_train_mat = [mat.to(device) for mat in list_train_mat]
     list_val_mat = [mat.to(device) for mat in list_val_mat]
 
