@@ -1,22 +1,22 @@
 echo "========="
 echo "twitch-gamer"
-python -u node_class.py --data twitch-gamer --w_fc1 1.7225875563060173e-05 --w_fc2 1.6687122432244406e-07 --w_fc3 1.6687122432244406e-07 --dropout1 0.8 --dropout2 0.9 --dropout3 0.1 --lr_fc1 0.0011238774399349959 --lr_fc2 0.0011238774399349959 --layer_norm 1 --dev 5 --hidden 256 --wd_sel 0.01787256318044225 --lr_sel 0.001008605157016106 --step1_iter 100 --step2_iter 40 --max_feat_select 5 --num_adj 2
+python -u node_class.py --data twitch-gamer --w_fc1 1.7225875563060173e-05 --w_fc2 1.6687122432244406e-07 --w_fc3 1.6687122432244406e-07 --dropout1 0.8 --dropout2 0.9 --dropout3 0.1 --lr_fc1 0.0011238774399349959 --lr_fc2 0.0011238774399349959 --layer_norm 1 --dev 0 --hidden 256 --wd_sel 0.01787256318044225 --lr_sel 0.001008605157016106 --step1_iter 100 --step2_iter 40 --max_feat_select 5 --num_adj 2
 #[66.3256323015061, 66.356563325323, 66.52787361107806, 66.38273573009113, 66.19239096814104]
 
 
 echo "========="
 echo "genius"
-python -u node_class.py --data genius --w_fc1 3.731707481256041e-05 --w_fc2 1.002297164686981e-06 --w_fc3 1.002297164686981e-06 --dropout1 0.4 --dropout2 0.1 --dropout3 0.0 --lr_fc1 0.007210990598181921 --lr_fc2 0.007210990598181921 --layer_norm 1 --dev 4 --hidden 256 --wd_sel 3.149333256247437e-06 --lr_sel 0.006129492167411046 --step1_iter 200 --step2_iter 40 --max_feat_select 5 --num_adj 2
+python -u node_class.py --data genius --w_fc1 3.731707481256041e-05 --w_fc2 1.002297164686981e-06 --w_fc3 1.002297164686981e-06 --dropout1 0.4 --dropout2 0.1 --dropout3 0.0 --lr_fc1 0.007210990598181921 --lr_fc2 0.007210990598181921 --layer_norm 1 --dev 0 --hidden 256 --wd_sel 3.149333256247437e-06 --lr_sel 0.006129492167411046 --step1_iter 200 --step2_iter 40 --max_feat_select 5 --num_adj 2
 #[91.38119030437882, 91.43376254774395, 90.44558331691532, 91.30149533458882, 91.58231530497343]
 
 echo "====================="
 echo "Penn94"
-python -u node_class.py --data fb100 --w_fc1 2.4725929632147945e-05 --w_fc2 6.029761469341191e-06 --w_fc3 6.029761469341191e-06 --dropout1 0.9 --dropout2 0.8 --dropout3 0.5 --lr_fc1 0.002247340034867173 --lr_fc2 0.002247340034867173 --layer_norm 1 --dev 2 --hidden 256 --wd_sel 1.5258764793695603e-06 --lr_sel 0.005075721122049113 --step1_iter 100 --step2_iter 20 --max_feat_select 5 --num_adj 2
+python -u node_class.py --data fb100 --w_fc1 2.4725929632147945e-05 --w_fc2 6.029761469341191e-06 --w_fc3 6.029761469341191e-06 --dropout1 0.9 --dropout2 0.8 --dropout3 0.5 --lr_fc1 0.002247340034867173 --lr_fc2 0.002247340034867173 --layer_norm 1 --dev 0 --hidden 256 --wd_sel 1.5258764793695603e-06 --lr_sel 0.005075721122049113 --step1_iter 100 --step2_iter 20 --max_feat_select 5 --num_adj 2
 #[86.7387944358578, 86.5533230293663, 85.71870170015457, 86.21329211746523, 85.20350334878928]
 
 echo "====================="
 echo "pokec"
-python -u node_class.py --data pokec --w_fc1 5.834619666270211e-07 --w_fc2 1.6585022017273566e-07 --w_fc3 1.6585022017273566e-07 --dropout1 0.9 --dropout2 0.6000000000000001 --dropout3 0.8 --lr_fc1 0.001917564105895921 --lr_fc2 0.001917564105895921 --layer_norm 1 --dev 7 --hidden 256 --wd_sel 1.9867889292382807e-05 --lr_sel 0.003241075172608557 --step1_iter 50 --step2_iter 20 --max_feat_select 5 --num_adj 2
+python -u node_class.py --data pokec --w_fc1 5.834619666270211e-07 --w_fc2 1.6585022017273566e-07 --w_fc3 1.6585022017273566e-07 --dropout1 0.9 --dropout2 0.6000000000000001 --dropout3 0.8 --lr_fc1 0.001917564105895921 --lr_fc2 0.001917564105895921 --layer_norm 1 --dev 0 --hidden 256 --wd_sel 1.9867889292382807e-05 --lr_sel 0.003241075172608557 --step1_iter 50 --step2_iter 20 --max_feat_select 5 --num_adj 2
 #[81.38744609956879, 81.58099764798118, 81.67262838102704, 81.5126421011368, 81.58614268914151]
 
 echo "============"
@@ -26,5 +26,5 @@ python -u node_class.py --data snap-patents --w_fc1 1.1588334706877353e-05 --w_f
 
 echo "============"
 echo "arxiv-year"
-python node_class.py --data arxiv-year --w_fc1 1.4804329350169762e-07 --w_fc2 8.134737804934632e-06 --w_fc3 8.134737804934632e-06 --dropout1 0.9 --dropout2 0.9 --dropout3 0.0 --lr_fc1 0.016116430573161755 --lr_fc2 0.016116430573161755 --layer_norm 1 --dev 1 --hidden 1024 --wd_sel 2.6106003825659324e-07 --lr_sel 0.008392327841098668 --step1_iter 300 --step2_iter 20 --directed 1 --max_feat_select 10 --num_adj 8
+python node_class.py --data arxiv-year --w_fc1 1.4804329350169762e-07 --w_fc2 8.134737804934632e-06 --w_fc3 8.134737804934632e-06 --dropout1 0.9 --dropout2 0.9 --dropout3 0.0 --lr_fc1 0.016116430573161755 --lr_fc2 0.016116430573161755 --layer_norm 1 --dev 0 --hidden 1024 --wd_sel 2.6106003825659324e-07 --lr_sel 0.008392327841098668 --step1_iter 300 --step2_iter 20 --directed 1 --max_feat_select 10 --num_adj 8
 #[62.85518577131115, 62.14422372865342, 63.24727779483666, 62.633157757989466, 62.35207974112479]

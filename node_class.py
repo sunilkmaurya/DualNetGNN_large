@@ -392,7 +392,6 @@ for i in range(5):
     accuracy_data = train(list_train_mat,list_val_mat,list_test_mat,list_label,num_nodes,num_feat,num_labels)
     num_layer = len(list_train_mat)
 
-    print(accuracy_data)
     acc_list.append(accuracy_data)
     list_total_acc.append(100-accuracy_data)
 
