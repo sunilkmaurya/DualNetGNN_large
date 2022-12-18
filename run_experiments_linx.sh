@@ -6,8 +6,8 @@ python -u node_class.py --data twitch-gamer --w_fc1 1.7225875563060173e-05 --w_f
 
 echo "========="
 echo "genius"
-python -u node_class.py --data genius --w_fc1 3.731707481256041e-05 --w_fc2 1.002297164686981e-06 --w_fc3 1.002297164686981e-06 --dropout1 0.4 --dropout2 0.1 --dropout3 0.0 --lr_fc1 0.007210990598181921 --lr_fc2 0.007210990598181921 --layer_norm 1 --dev 0 --hidden 256 --wd_sel 3.149333256247437e-06 --lr_sel 0.006129492167411046 --step1_iter 200 --step2_iter 40 --max_feat_select 5 --num_adj 2
-#[91.38119030437882, 91.43376254774395, 90.44558331691532, 91.30149533458882, 91.58231530497343]
+python -u node_class.py --data genius --w_fc1 5.112585853073617e-06 --w_fc2 1.339149139340369e-06 --w_fc3 1.339149139340369e-06 --dropout1 0.5 --dropout2 0.5 --dropout3 0.1 --lr_fc1 0.011562385068279087 --lr_fc2 0.011562385068279087 --layer_norm 1 --dev 0 --hidden 512 --wd_sel 2.072495994135604e-06 --lr_sel 0.008809805323998708 --step1_iter 500 --step2_iter 50 --max_feat_select 7 --num_adj 2
+#[91.54093420091411, 91.44607699236026, 91.50681067600233, 91.24776173523527, 91.50563791303512]
 
 echo "====================="
 echo "Penn94"

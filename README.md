@@ -22,7 +22,7 @@ Original data-splits (five) from LINKX paper's repository are used.
 | pokec         | 81\.55          |
 | arXiv-year    | 62\.65          |
 | snap-patents  | 70\.22          |
-| genius        | 91\.23          |
+| genius        | 91\.45          |
 | twitch-gamers | 66\.36          |
 
 Test score values are reported on lowest validation loss.
