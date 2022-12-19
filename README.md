@@ -30,7 +30,7 @@ Scores are accuracy(%) values for all datasets except genius where rocauc is cal
 
 **Preprocessing data**
 
-Run `python preprocessing_code.py` to create the training data for the model. 
+Run `python preprocessing_code.py` to create the training data for the model. Code for downloading data is taken from LINKX repository.
 
 Downloaded data is stored in `data` folder and preprocessed files are stored in `processed_data` folder.
 
