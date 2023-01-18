@@ -1,6 +1,6 @@
 # DualNetGNN_large
 
-Implementation of Dual-Net GNN for large graph datasets from LINKX paper. For details, please refer to our [short paper](https://dl.acm.org/doi/10.1145/3511808.3557543).
+Implementation of Dual-Net GNN for large graph datasets from LINKX paper. For details, please refer to our [short paper](https://dl.acm.org/doi/10.1145/3511808.3557543). Full paper is accepted and will be online soon.
 
 Implementation for small graph datasets is available at [this](https://github.com/sunilkmaurya/DualNetGNN) repository.
 
