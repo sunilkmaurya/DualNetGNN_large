@@ -34,6 +34,8 @@ Run `python preprocessing_code.py` to create the training data for the model. Co
 
 Downloaded data is stored in `data` folder and preprocessed files are stored in `processed_data` folder.
 
+Pre-processed training splits for Penn94, pokec, arXiv-year, genius and twitch-gamers are available for download [here](https://zenodo.org/record/7460885) and for snap-patents [here](https://zenodo.org/record/7460500). Please download the pickle files and place them in the `processed_data` folder.
+
 
 **Training**
 
