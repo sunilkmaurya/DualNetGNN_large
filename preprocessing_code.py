@@ -8,13 +8,13 @@ from data_utils import gen_normalized_adjs, gen_normalized_adjs_i, load_fixed_sp
 from torch_geometric.utils import to_undirected
 
 data_loc = "./data/"
-datasets = [('genius',''),('twitch-gamer',''),('arxiv-year',''),('fb100','Penn94'),('pokec',''),('snap-patents','')]
-list_num_hops_adj = [0,0,3,0,0,0]
-list_num_hops_feat = [4,4,3,4,4,3]
-list_self_loop_adj = [True,True,True,True,True,True]
-list_no_loop_adj = [True,True,False,True,True,True]
-list_self_loop_feat = [True,True,True,True,True,True]
-list_no_loop_feat = [True,True,False,True,True,True]
+datasets = [('genius',''),('twitch-gamer',''),('arxiv-year',''),('fb100','Penn94'),('pokec',''),('snap-patents',''),('wiki','')]
+list_num_hops_adj = [0,0,3,0,0,0,0]
+list_num_hops_feat = [4,4,3,4,4,3,3]
+list_self_loop_adj = [True,True,True,True,True,True,True] #whether to use self-loop adj
+list_no_loop_adj = [True,True,False,True,True,True,True] # whether to use simple adj
+list_self_loop_feat = [True,True,True,True,True,True,True] # whether to calculate self-looped features
+list_no_loop_feat = [True,True,False,True,True,True,True] # whether to calculate simple adj features
 
 #Loading or pre-processing function
 
@@ -38,9 +38,8 @@ for ind, db in enumerate(datasets):
     if len(dataset.label.shape) == 1:
         dataset.label = dataset.label.unsqueeze(1)
 
-    if  db in ['ogbn-proteins', 'wiki']:
-        split_idx_lst = [dataset.get_idx_split(train_prop=args.train_prop, valid_prop=args.valid_prop)
-                    for _ in range(args.runs)]
+    if  db[0] in ['wiki']:
+        split_idx_lst = [dataset.get_idx_split(train_prop=0.5, valid_prop=0.25) for _ in range(5)] # get 5 random splits, seed=0
     else:
         split_idx_lst = load_fixed_splits(db[0], db[1])
 

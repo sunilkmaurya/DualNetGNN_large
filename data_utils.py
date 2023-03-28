@@ -10,6 +10,7 @@ from torch_sparse import SparseTensor
 
 def rand_train_test_idx(label, train_prop=.5, valid_prop=.25, ignore_negative=True):
     """ randomly splits label into train/valid/test splits """
+    np.random.seed(0)
     if ignore_negative:
         labeled_nodes = torch.where(label != -1)[0]
     else:

@@ -28,6 +28,10 @@ Original data-splits (five) from LINKX paper's repository are used.
 Test score values are reported on lowest validation loss.
 Scores are accuracy(%) values for all datasets except genius where rocauc is calculated.
 
+**Wiki Dataset**
+
+As Wiki data-splits are not available, we generated 5 random splits using code in LINKX's repository with seed=0 and achieve 60.91% accuracy.
+
 **Preprocessing data**
 
 Run `python preprocessing_code.py` to create the training data for the model. Code for downloading data is taken from LINKX repository.
